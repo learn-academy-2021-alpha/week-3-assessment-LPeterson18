@@ -13,7 +13,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
   Object destructuring is using the key to call a value from an object and set it equal to a variable so that the entire object calling process does not need to occur every time the value needs to be called.  Especially useful if a deep nested value within an object is going to be called a number of times.
 
   Researched answer:
-  Object destructuring unpacks a value from an object and assigns it to a variable.
+  Object de-structuring unpacks a value from an object and assigns it to a variable.
 
 
 2. What are React lifecycle methods? Provide three examples.
