@@ -54,23 +54,6 @@ describe("When createFibArray is called", () => {
 //first two numbers set to 1
 //afterward sum previous two array elements together to create new element
 
-// const createFibArray = (number) => {
-//   var fibArray = Array(number).fill(0)
-//   for(let i = 0; i < fibArray.length; i++){
-//     if(i === 0){
-//       fibArray[i] = 1
-//     } else if(i === 1){
-//       fibArray[i] = 1
-//     } else{
-//       fibArray[i] = fibArray[i - 2] + fibArray[i - 1]
-//     }
-//   }
-//   return fibArray
-// }
-// console.log(createFibArray(6));
-//works with for loop
-//GET TO WORK WITH .MAP
-
 const createFibArray = (number) => {
   var fibArray = Array(number).fill(0)
   return fibArray.map((number, i) => {
