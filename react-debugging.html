@@ -46,11 +46,13 @@
           this.setState({ hand: [] })
         }
 
+        //added hand={ this.state.hand }
         render(){
           return(
             <>
               <h1>Draw a Card</h1>
               <Card
+                hand={ this.state.hand }
                 drawCard={ this.drawCard }
                 shuffle={ this.shuffle }
               />
@@ -60,6 +62,9 @@
       }
 
       class Card extends React.Component{
+
+        //added this.props.drawCard to first button
+        //added this.props to shuffle in the second button prompt
         render(){
           let handStyles = {
             display: "flex",
@@ -75,10 +80,10 @@
           }
           return(
             <>
-              <button onClick={}>
+              <button onClick={ this.props.drawCard }>
                 Click to Draw a Card
               </button>
-              <button onClick={ shuffle }>
+              <button onClick={ this.props.shuffle }>
                 Return Cards and Shuffle Deck
               </button>
               <div style={ handStyles }>
